@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <h1 id="title">Survey Form</h1>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <p id="description">a short explanation, this is a survey form</p>
+    <form id="survey-form">
+      Name:<input type="text" id="name" placeholder="Enter your name" /required>
+      <label id="name-label" for="name">* Name: </label>
+      E-mail:<input type="email" id="email" placeholder="Enter your Email" /required>
+      <label id="email-label" for="email">* Email: </label>
+      Number:<input type="number" id="number" placeholder="Age" min="1" max="125">
+      <label id="number-label" for="age">* Age </label>
+      <select id="dropdown" name="currentPos" class="dropdown">
+        <option disabled value>Select an option"</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+        </ul>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Visualization</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Additional Courses</label></li>
+        </ul>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
